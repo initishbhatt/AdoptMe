@@ -13,14 +13,23 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.ui.component
 
-import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Shapes
-import androidx.compose.ui.unit.dp
+import androidx.annotation.StringRes
+import androidx.compose.material.Button
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 
-val shapes = Shapes(
-    small = RoundedCornerShape(0.dp),
-    medium = RoundedCornerShape(4.dp),
-    large = RoundedCornerShape(8.dp)
-)
+@Composable
+fun AdoptMeButton(
+    onClick: () -> Unit,
+    modifier: Modifier = Modifier,
+    @StringRes textId: Int
+) {
+    Button(onClick = { onClick() }, modifier = modifier, shape = MaterialTheme.shapes.medium) {
+        Text(text = stringResource(id = textId))
+    }
+}

@@ -10,4 +10,6 @@
       the License.
       -->
     <string name="app_name">AdoptMe</string>
+    <string name="adopt_me_text">Adopt me please!</string>
+    <string name="adopt_me_thankyou_text">You rock..Thanks for Adopting a cat</string>
 </resources>

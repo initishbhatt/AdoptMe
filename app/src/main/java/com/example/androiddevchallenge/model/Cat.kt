@@ -28,6 +28,7 @@ data class Cat(
     val caption: String,
     val origin: String,
     val flag: String,
+    val weight:String,
     @DrawableRes val imageId: Int
 )
 
@@ -40,6 +41,7 @@ val catsFakeModel = listOf(
         "I love you meow and furever.",
         "Chile",
         "\uD83C\uDDE8\uD83C\uDDF1",
+        "2 kg",
         R.drawable.img_cat_1
     ),
     Cat(
@@ -50,6 +52,7 @@ val catsFakeModel = listOf(
         "Anything is paws-ible with a cat by your side.",
         "Scotland",
         "\uD83C\uDDEC\uD83C\uDDE7",
+        "1 kg",
         R.drawable.img_cat_2
     ),
     Cat(
@@ -60,6 +63,7 @@ val catsFakeModel = listOf(
         "Think of the hilarious videos we could make...",
         "Canada, Isle of Man",
         "\uD83C\uDDE8\uD83C\uDDE6",
+        "2.5 kg",
         R.drawable.img_cat_3
     ),
     Cat(
@@ -70,6 +74,7 @@ val catsFakeModel = listOf(
         "Meet your lap warmer",
         "USA",
         "\uD83C\uDDFA\uD83C\uDDF8",
+        "3 kg",
         R.drawable.img_cat_4
     ),
     Cat(
@@ -80,6 +85,7 @@ val catsFakeModel = listOf(
         "Julie can't wait for a spring break.",
         "USA",
         "\uD83C\uDDFA\uD83C\uDDF8",
+        "4 kg",
         R.drawable.img_cat_5
     ),
     Cat(
@@ -90,6 +96,7 @@ val catsFakeModel = listOf(
         " This little charmer knows he's got it and is not afraid to flaunt it.",
         "Peru",
         "\uD83C\uDDF5\uD83C\uDDEA",
+        "4 kg",
         R.drawable.img_cat_6
     ),
     Cat(
@@ -100,6 +107,7 @@ val catsFakeModel = listOf(
         "Sassy,single ready to mingle.",
         "Russia",
         "\uD83C\uDDF7\uD83C\uDDFA",
+        "3.7 kg",
         R.drawable.img_cat_7
     )
 
