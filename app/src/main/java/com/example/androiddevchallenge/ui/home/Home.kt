@@ -32,7 +32,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clipToBounds
 import androidx.compose.ui.layout.ContentScale
-import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
@@ -66,7 +65,7 @@ fun HomeContent(navController: NavController) {
 @Composable
 fun CatList(cats: List<Cat>, navController: NavController) {
     VerticalGrid(
-        Modifier.padding(horizontal = 8.dp).verticalScroll(rememberScrollState()).testTag("gridTag")
+        Modifier.padding(horizontal = 8.dp).verticalScroll(rememberScrollState())
     ) {
         cats.forEach { cat ->
             CatCard(
