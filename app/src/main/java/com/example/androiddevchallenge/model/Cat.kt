@@ -28,7 +28,7 @@ data class Cat(
     val caption: String,
     val origin: String,
     val flag: String,
-    val weight:String,
+    val weight: String,
     @DrawableRes val imageId: Int
 )
 
